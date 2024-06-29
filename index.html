@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Nokia phones.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="IMAGES/kisspng-logo-nokia-6-1-nokia-1-5-2-17-brand-5b7642eb484606.963929201534477035296.png">
+
+          </div>
+          <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Phone</a></li>
+                <li><a href="CALENDER.html">Calender</a></li>
+                <li><a href="login.html">Shop</a></li>
+    
+            </ul>
+
+          </div>
+
+
+        </nav>
+    <div class="information">
+        <div class="overlay"></div>
+        <img src="IMAGES/kisspng-ash-mobility-ltd-iphone-5s-smartphone-clip-art-mob-5cba26292ed142.3705478115557033371918.png" class="mobile">
+        <div id="circle">
+            <div class="feature one">
+                <img src="IMAGES/camera-lens-royalty-free-stock-photography-clip-art-vector-slr-camera-87f32694369fc47df7b764c78d549e7a.png">
+                <div>
+                    <h1>Camera</h1>
+                    <p>12mp, wide angle lens</p>
+                </div>
+            </div>
+            <div class="feature two">
+                <img src="IMAGES/computer-icons-central-processing-unit-computer-memory-clip-art-computer-3a1904afe3bbb23d58b23fec1037d802.png">
+                <div>
+                    <h1>Processor</h1>
+                    <p>Snapdragon octa core 11nm</p>
+                </div>
+            </div>
+            <div class="feature three">
+                <img src="IMAGES/iphone-computer-icons-telephone-smartphone-mobile-phone-display-action-965a7faec0627dbbbbde512f6877372d.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5" mini-drop fullscreen</p>
+                </div>
+            </div>
+            <div class="feature four">
+                <img src="IMAGES/battery-charger-computer-icons-mobile-phones-battery-e7c17e92aa097735f491a5ca33fbce1e.png">
+                <div>
+                    <h1>Battery</h1>
+                    <p>5000mAh, 720Hrs</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="controls">
+        <img src="IMAGES/arrow-computer-icons-material-design-design-edb1e59ebf93f01e9ec70ed15a230efc.png" id="upBtn">
+        <h3>Features</h3>
+        <img src="IMAGES/arrow-computer-icons-material-design-design-edb1e59ebf93f01e9ec70ed15a230efc.png" id="downBtn">
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    var circle = document.getElementById("circle");
+    var upBtn = document.getElementById("upBtn");
+    var downBtn = document.getElementById("downBtn");
+
+    var rotatevalue = circle.style.transform;
+    var rotatesum;
+
+    upBtn.onclick= function()
+    {
+        rotatesum = rotatevalue + "rotate(-90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+
+    }
+    downBtn.onclick= function()
+    {
+        rotatesum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotatesum;
+        rotatevalue = rotatesum;
+
+    }
+</script>
+
+
+
+    
+</body>
+</html>
